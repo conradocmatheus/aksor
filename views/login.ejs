@@ -59,10 +59,11 @@
                     throw new Error('Falha ao criar sessão no servidor.');
                 }
             } catch (error) {
+                console.error('Erro de login:', error);
                 Swal.fire({
                     icon: 'error',
                     title: 'Erro de Login',
-                    text: 'Email ou senha inválidos. Tente novamente.'
+                    text: error.message
                 });
             }
         });
