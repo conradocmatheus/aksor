@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Temporary files from multer
+uploads/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sensitive information
+serviceAccountKey.json
+.env
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE directories
+.vscode/
+.idea/
