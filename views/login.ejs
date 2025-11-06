@@ -35,15 +35,7 @@
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
     <script>
-        const firebaseConfig = {
-            apiKey: "AIzaSyABNVUI6sINW0sEollzhNPYjSK864PX5Yw",
-            authDomain: "aksor-3cc23.firebaseapp.com",
-            projectId: "aksor-3cc23",
-            storageBucket: "aksor-3cc23.firebasestorage.app",
-            messagingSenderId: "704328292053",
-            appId: "1:704328292053:web:1b153e8be043adf9bef45c",
-            measurementId: "G-27P5BKSZR8"
-            };
+        const firebaseConfig = <%- firebaseConfig %>;
         firebase.initializeApp(firebaseConfig);
 
         document.getElementById('loginForm').addEventListener('submit', async (e) => {

@@ -1,5 +1,8 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 const eventRoutes = require('./routes/eventRoutes');
 const attendanceRoutes = require('./routes/attendanceRoutes');
